@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -32,18 +33,19 @@
 .nav{
     width: 100%;
     height: 110px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #008a20;
     padding: 35px 50px;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 .logo{
     margin-left: 30px;
 }
 .logo h1{
-    color: #008f11;
+    color: lightgreen;
     font-size: 38px;
     font-weight: 700;
     text-decoration: underline;
@@ -73,8 +75,10 @@
 
 /* Main Content */
 .content{
-    position: relative;
-    top: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .content h1{
     font-size: 58px;
@@ -96,8 +100,10 @@
 .btn{
     width: 170px;
     height: 50px;
-    position: relative;
-    left: 45%;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin-top: 60px;
     border-radius: 50px;
     border: none;
@@ -139,16 +145,70 @@
 .main-text h1{
     font-size: 30px;
     font-weight: 700;
-    color: green;
+    color: #008a20;
 }
 .main-text p{
     font-size: 20px;
     font-weight: 400;
     margin-top: 15px;
+    line-height: 30px;
 }
 .infor{
-    margin-top: 15px;
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.infor img{
+    width: 1000px;
+}
+.infor p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 50px;
+    line-height: 30px;
+}
+
+/*Footer*/
+.footer{
+    height: 120px;
+    background: #008a20;
+    margin-top: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.address{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-left: 80px;
+}
+.call{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-left: 100px;
+}
+.follow{
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.follow p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.icons{
+    margin-left: 10px;
+}
+.icons i{
+    font-size: 30px;
+    margin-left: 15px;
+    cursor: pointer;
 }
