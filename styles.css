@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 .section {
-    display: none; /* Hide all sections by default */
+    display: none; 
 }
 
 .container{
@@ -23,7 +23,7 @@
     left: 0;
 }
 #home-section{
-    display: block; /* Ensure home is shown by default */
+    display: block; 
     width: 100%;
     height: 100vh;
     background-image: url(./images/background.jpg);
@@ -38,7 +38,7 @@
 /******************navigation bar**********************/
 .nav{
     width: 100%;
-    height: 110px;
+    height: 100px;
     background-color: #008a20;
     padding: 35px 50px;
     position: fixed;
@@ -50,12 +50,14 @@
 }
 .logo{
     margin-left: 30px;
+    cursor: pointer;
 }
 .logo h1{
     color: lightgreen;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 700;
     text-decoration: underline;
+   
 }
 .logo p{
     color: white;
@@ -88,7 +90,8 @@
     transform: translate(-50%, -50%);
 }
 .content h1{
-    font-size: 60px;
+    font-size: 70px;
+    width: 100%;
     font-family: "Poetsen One", sans-serif;
     font-weight: 500;
     color: white;
@@ -132,8 +135,8 @@
 /*******************About Us.*****************************/
 .top-sect{
     width: 100%;
-    height: 200px;
-    background-image: url(./images/image1.jpg);
+    height: 500px;
+    background-image: url(./images/AboutBack.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -141,8 +144,10 @@
 .top-sect h1{
     width: 100%;
     height: 100%;
-    font-size: 60px;
-    font-weight: 700;
+    align-content: center;
+    font-size: 70px;
+    font-weight: 400;
+    font-family: "Poetsen One", sans-serif;
     color: white;
     text-align: center;
     padding-top: 60px;
@@ -158,9 +163,9 @@
 }
 .main-text p{
     font-size: 20px;
-    font-weight: 400;
     margin-top: 15px;
     line-height: 30px;
+    font-family: "Noto Sans", sans-serif;
 }
 .infor{
     width: 100%;
@@ -175,16 +180,15 @@
 }
 .infor p{
     font-size: 20px;
-    font-weight: 400;
     margin-left: 50px;
     line-height: 30px;
+    font-family: "Noto Sans", sans-serif;
 }
 
 /**************Footer********************/
 .footer{
     height: 120px;
     background: #008a20;
-    margin-top: 100px;
     display: flex;
     justify-content: start;
     align-items: center;
