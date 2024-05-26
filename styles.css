@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Jacquard", sans-serif;
 }
 
 .container{
@@ -162,7 +163,9 @@
     align-items: center;
 }
 .infor img{
-    width: 1000px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .infor p{
     font-size: 20px;
@@ -211,4 +214,7 @@
     font-size: 30px;
     margin-left: 15px;
     cursor: pointer;
+}
+.icons i:active{
+    transform: scale(0.98);
 }
