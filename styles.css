@@ -208,6 +208,12 @@
     padding-top: 60px;
 }
 
+h2{
+    text-align: center;
+    color:#008a20;
+    
+}
+
 /**************Footer********************/
 .footer{
     height: 120px;
