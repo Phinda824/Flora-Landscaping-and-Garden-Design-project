@@ -209,13 +209,43 @@
 h2 {
   text-align: center;
   color: #008a20;
+
 }
 .services{
     padding: 0 80px;
 }
+.service_plan {
+    margin-top: 4rem;
+}
+.service_design {
+    margin-top: 4rem;
+}
+.service_maintain{
+    margin-top: 4rem; 
+}
+
 .services_and_design{
     display: flex;
-    
+    column-gap: 4rem; 
+}
+.service_image{
+    display: flex;
+    column-gap: 10px; 
+    margin-top: 2rem;
+
+}
+.service_image img{
+    border-radius: 5px;
+}
+.service_plantext{
+    font-size: 20px;
+    margin-top: 3.5rem;
+}
+.service_design {
+    margin-top: 4rem;
+}
+.service_maintain{
+    margin-top: 4rem; 
 }
 
 /**************Footer********************/
