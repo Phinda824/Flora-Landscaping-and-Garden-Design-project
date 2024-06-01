@@ -1,256 +1,257 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+12&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .section {
-    display: none; 
+  display: none;
 }
 
-.container{
-    background: #e6eae6;
+.container {
+  background: #e6eae6;
 }
-.overlay{ 
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    left: 0;
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-#home-section{
-    display: block; 
-    width: 100%;
-    height: 100vh;
-    background-image: url(./images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+#home-section {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
-#home-section::before{
-    background-color: rgba(0, 0, 0, 0.5);
+#home-section::before {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /******************navigation bar**********************/
-.nav{
-    width: 100%;
-    height: 110px;
-    background-color: #008a20;
-    padding: 35px 50px;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-    font-family: "Noto Sans", sans-serif;
+.nav {
+  width: 100%;
+  height: 110px;
+  background-color: #008a20;
+  padding: 35px 50px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  font-family: "Noto Sans", sans-serif;
 }
-.logo{
-    margin-left: 30px;
-    cursor: pointer;
+.logo {
+  margin-left: 30px;
+  cursor: pointer;
 }
-.logo h1{
-    color: white;
-    font-size: 30px;
-    font-weight: 700;
-    text-decoration: underline;
-   
+.logo h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline;
 }
-.logo p{
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: underline;
+.logo p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
 }
-.nav ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 30px;
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
 }
-.nav ul li{
-    margin-left: 70px;
-    list-style: none;
+.nav ul li {
+  margin-left: 70px;
+  list-style: none;
 }
-.nav ul li a{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
+.nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
 }
 
 /****************** Main Content**************** */
-.content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.content h1{
-    font-size: 60px;
-    width: 100%;
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 500;
-    color: white;
-    text-align: center;
+.content h1 {
+  font-size: 60px;
+  width: 100%;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-align: center;
 }
-.content p{
-    width: 850px;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    line-height: 30px;
-    font-family: "Noto Sans", sans-serif;
+.content p {
+  width: 850px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  line-height: 30px;
+  font-family: "Noto Sans", sans-serif;
 }
-.btn{
-    width: 170px;
-    height: 50px;
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 60px;
-    border-radius: 50px;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .5s;
+.btn {
+  width: 170px;
+  height: 50px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 60px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
 }
-.btn:hover{
-    color: #008f11;
-    background: #e6eae6;
+.btn:hover {
+  color: #008f11;
+  background: #e6eae6;
 }
-
 
 /*******************About Us.*****************************/
-.top-sect{
-    width: 100%;
-    height: 500px;
-    background-image: url(./images/CH02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+.top-sect {
+  width: 100%;
+  height: 500px;
+  background-image: url(./images/CH02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
-.top-sect h1{
-    width: 100%;
-    height: 100%;
-    align-content: center;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 400;
-    font-family: "Poetsen One", sans-serif;
-    color: white;
-    padding-top: 60px;
+.top-sect h1 {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Poetsen One", sans-serif;
+  color: white;
+  padding-top: 60px;
 }
-.sect-text{
-    margin-top: 50px;
-    padding: 0 80px;
+.sect-text {
+  margin-top: 50px;
+  padding: 0 80px;
 }
-.main-text h1{
-    font-size: 30px;
-    font-weight: 700;
-    color: #008a20;
+.main-text h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #008a20;
 }
-.main-text p{
-    font-size: 20px;
-    margin-top: 15px;
-    line-height: 30px;
-    font-family: "Quicksand", sans-serif;
+.main-text p {
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 30px;
+  font-family: "Quicksand", sans-serif;
 }
-.infor{
-    width: 100%;
-    height: 400px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.infor {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.infor img{
-    width: 1000px;
+.infor img {
+  width: 1000px;
 }
-.infor p{
-    font-size: 20px;
-    margin-left: 50px;
-    line-height: 30px;
-    font-family: "Quicksand", sans-serif;
+.infor p {
+  font-size: 20px;
+  margin-left: 50px;
+  line-height: 30px;
+  font-family: "Quicksand", sans-serif;
 }
 
 /**************SERVICES******************/
-.services_heading{
-    width: 100%;
-    height: 500px;
-    background-image: url(./images/CH02.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+.services_heading {
+  width: 100%;
+  height: 500px;
+  background-image: url(./images/CH02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.services_heading h1{
-    width: 100%;
-    height: 100%;
-    align-content: center;
-    text-align: center;
-    font-size: 60px;
-    font-weight: 400;
-    font-family: "Poetsen One", sans-serif;
-    color: white;
-    padding-top: 60px;
+.services_heading h1 {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Poetsen One", sans-serif;
+  color: white;
+  padding-top: 60px;
 }
 
-h2{
-    text-align: center;
-    color:#008a20;
+h2 {
+  text-align: center;
+  color: #008a20;
+}
+.services_and_design{
+    display: flex;
     
 }
 
 /**************Footer********************/
-.footer{
-    height: 120px;
-    background: #008a20;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+.footer {
+  height: 120px;
+  background: #008a20;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
-.address{
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-    margin-left: 80px;
+.address {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 80px;
 }
-.call{
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
-    margin-left: 100px;
+.call {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin-left: 100px;
 }
-.follow{
-    margin-right: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
+.follow {
+  margin-right: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
 }
-.follow p{
-    font-size: 20px;
-    font-weight: 400;
-    color: white;
+.follow p {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
 }
-.icons{
-    margin-left: 10px;
+.icons {
+  margin-left: 10px;
 }
-.icons i{
-    font-size: 30px;
-    margin-left: 15px;
-    cursor: pointer;
+.icons i {
+  font-size: 30px;
+  margin-left: 15px;
+  cursor: pointer;
 }
