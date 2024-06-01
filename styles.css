@@ -210,6 +210,9 @@ h2 {
   text-align: center;
   color: #008a20;
 }
+.services{
+    padding: 0 80px;
+}
 .services_and_design{
     display: flex;
     
