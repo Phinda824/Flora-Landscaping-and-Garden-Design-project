@@ -209,6 +209,7 @@
 h2 {
   text-align: center;
   color: #008a20;
+  font-family: "Noto Sans", sans-serif;
 
 }
 .services{
@@ -240,6 +241,7 @@ h2 {
 .service_plantext{
     font-size: 20px;
     margin-top: 3.5rem;
+    font-family: "Noto Sans", sans-serif;
 }
 .service_design {
     margin-top: 4rem;
