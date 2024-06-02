@@ -26,8 +26,7 @@
                         <li><a href="#about-section" class="nav-link" data-target="about-section">About Us</a></li>
                         <li><a href="#services-section" class="nav-link" data-target="services-section">Our Services</a>
                         </li>
-                        <li><a href="#portfolio-section" class="nav-link" data-target="portfolio-section">Our
-                                Gallery</a></li>
+                        <li><a href="#gallery_section" class="nav-link" data-target="gallery_section">Our Gallery</a></li>
                         <li><a href="#contacts-section" class="nav-link" data-target="contacts-section">Contacts Us</a>
                         </li>
                     </ul>
@@ -56,12 +55,13 @@
                     <li><a href="#about-section" class="nav-link" data-target="about-section">About Us</a></li>
                     <li><a href="#services-section" class="nav-link" data-target="services-section">Our Services</a>
                     </li>
-                    <li><a href="#portfolio-section" class="nav-link" data-target="portfolio-section">Our Gallery</a>
+                    <li><a href="#gallery_section" class="nav-link" data-target="gallery_section">Our Gallery</a>
                     </li>
                     <li><a href="#contacts-section" class="nav-link" data-target="contacts-section">Contacts Us</a></li>
                 </ul>
             </div>
             <div class="top-sect">
+                 <div class="overlay"></div>
                 <h1>WHO ARE WE?</h1>
             </div>
             <div class="sect-text">
@@ -99,12 +99,13 @@
                     <li><a href="#about-section" class="nav-link" data-target="about-section">About Us</a></li>
                     <li><a href="#services-section" class="nav-link" data-target="services-section">Our Services</a>
                     </li>
-                    <li><a href="#portfolio-section" class="nav-link" data-target="portfolio-section">Our Gallery</a>
+                    <li><a href="#gallery_section" class="nav-link" data-target="gallery_section">Our Gallery</a>
                     </li>
                     <li><a href="#contacts-section" class="nav-link" data-target="contacts-section">Contacts Us</a></li>
                 </ul>
             </div>
             <div class="services_heading">
+                <div class="overlay"></div>
                 <h1>WHAT WE OFFER</h1>
             </div>
 
@@ -166,8 +167,8 @@
     </div>
     </div>
 
-    <!-------------------- Portfolio ---------------->
-    <div id="portfolio-section" class="section" style="display: none;">
+    <!--------------------Gallery---------------->
+    <div id="gallery_section" class="section" style="display: none;">
         <div class="container">
             <div class="nav">
                 <div class="logo">
@@ -179,12 +180,34 @@
                     <li><a href="#about-section" class="nav-link" data-target="about-section">About Us</a></li>
                     <li><a href="#services-section" class="nav-link" data-target="services-section">Our Services</a>
                     </li>
-                    <li><a href="#portfolio-section" class="nav-link" data-target="portfolio-section">Our Gallery</a>
+                    <li><a href="#gallery_section" class="nav-link" data-target="gallery_section">Our Gallery</a>
                     </li>
                     <li><a href="#contacts-section" class="nav-link" data-target="contacts-section">Contacts Us</a></li>
                 </ul>
             </div>
-
+            <div class="gallery_background">
+                <div class="overlay"></div>
+                <h1>OUR GALLERY</h1>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/front-yard-landscaping.jpeg" alt="" height="400" width="500">
+                    <div class="overlay">Comments from Clients</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Garden02.jpg" alt="" height="400" width="500">
+                    <div class="overlay">Comments from Clients</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Simple-Landscape.png" alt="" height="400" width="500">
+                    <div class="overlay">Comments from Clients</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/garden.png" alt="" height="400" width="500">
+                    <div class="overlay">Comments from Clients</div>
+                </div>
+            </div>
+           
         </div>
     </div>
 
@@ -201,11 +224,45 @@
                     <li><a href="#about-section" class="nav-link" data-target="about-section">About Us</a></li>
                     <li><a href="#services-section" class="nav-link" data-target="services-section">Our Services</a>
                     </li>
-                    <li><a href="#portfolio-section" class="nav-link" data-target="portfolio-section">Our Gallery</a>
+                    <li><a href="#gallery_section" class="nav-link" data-target="gallery_section">Our Gallery</a>
                     </li>
                     <li><a href="#contacts-section" class="nav-link" data-target="contacts-section">Contacts Us</a></li>
                 </ul>
             </div>
+            <div class="contact_background">
+                <div class="overlay"></div>
+                <h1>OUR CONTACTS</h1>
+            </div>
+
+            <div class="contact_form">
+    <h2>Contact Us</h2>
+    <form action="YOUR_FORM_SUBMISSION_URL" method="POST">
+        <div class="form_group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form_group">
+            <label for="companyname">Company Name</label>
+            <input type="text" id="companyname" name="companyname">
+        </div>
+        <div class="form_group">
+            <label for="phonenumber">Phone Number</label>
+            <input type="tel" id="phonenumber" name="phonenumber" required>
+        </div>
+        <div class="form_group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form_group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form_group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
         </div>
     </div>
 
