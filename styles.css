@@ -248,13 +248,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .cards{
     width: 280px;
     height: 300px;
-    background-color: #008a20;
-    padding: 5px;
+    background-color: white;
+    padding: 10px;
     border-radius: 5px;
 }
 .cards img{
@@ -262,6 +262,84 @@
     height: 200px;
     object-fit: cover;
 }
+.cards p{
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.implement{
+    margin: 0 80px 0 80px;
+}
+.implement h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+}
+.implement ul{
+    list-style: none;
+    margin-top: 15px;
+}
+.implement ul li{
+    font-size: 16px;
+    font-weight: 400px;
+    margin-top: 8px;
+}
+.cards-implem1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.card2{
+    width: 280px;
+    height: 230px;
+    background-color: white;
+    border-radius: 5px;
+}
+.card2 img{
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.maintanance{
+    margin: 80px 80px 0 80px;
+}
+.maintanance h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+}
+.maintanance ul{
+    list-style: none;
+    margin-top: 15px;
+}
+.maintanance ul li{
+    font-size: 16px;
+    font-weight: 400px;
+    margin-top: 8px;
+}
+.cards-maintain{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.card3{
+    width: 280px;
+    height: 230px;
+    background-color: white;
+    border-radius: 5px;
+}
+.card3 img{
+    width: 100%;
+    height: 230px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
 
 
 
