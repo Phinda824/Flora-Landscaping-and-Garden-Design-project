@@ -148,3 +148,55 @@ span{
     justify-content: space-between;
     align-items: center;
 }
+.cards3-sect{
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/***************Footer****************/
+.footer{
+    height: 120px;
+    background: #008a20;
+    margin-top: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.address{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-left: 80px;
+}
+.call{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-left: 100px;
+}
+.follow{
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.follow p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+.icons{
+    margin-left: 10px;
+}
+.icons i{
+    font-size: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.icons i:hover{
+    transform: scale(1.1);
+}
