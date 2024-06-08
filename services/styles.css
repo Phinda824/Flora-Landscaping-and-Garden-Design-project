@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jacquard", sans-serif;
+}
+
+.container{
+    background: #e6eae6;
+}
+.overlay{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content{
+    width: 100%;
+    height: 500px;
+    background-image: url(./images/Garden-edging-ideas-with-curved-garden-edging-and-rock-garden.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*navigation bar*/
+.nav{
+    width: 100%;
+    height: 110px;
+    background-color: #008a20;
+    padding: 35px 50px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.logo{
+    margin-left: 30px;
+}
+.logo h1{
+    color: lightgreen;
+    font-size: 38px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.logo p{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.nav ul li{
+    margin-left: 70px;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    transition: 1s ease;
+}
+span{
+    color: lightgreen;
+}
+.nav ul li a:hover{
+  color: lightgreen;
+}
+.home-section{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home-section h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+/**************Section***************/
+.service-sect{
+    padding: 60px;
+}
+.service-sect h1{
+    font-size: 22px;
+    font-weight: 400;
+    color: #008a20;
+}
+.cards-sect{
+    margin-top: 20px;
+}
+.cards{
+    width: 200px;
+    height: 220px;
+}
+.cards img{
+    width: 100%;
+    height: 220px;
+}
+.cards p{
+    width: ;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    position: absolute;
+    margin-top: -120px;
+}
