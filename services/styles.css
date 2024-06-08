@@ -98,22 +98,53 @@ span{
     color: #008a20;
 }
 .cards-sect{
-    margin-top: 20px;
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .cards{
-    width: 200px;
-    height: 220px;
+    width: 280px;
+    height: 260px;
+    display: block;
+    position: relative;
 }
 .cards img{
     width: 100%;
-    height: 220px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 5px;
 }
-.cards p{
-    width: ;
-    font-size: 18px;
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 1;
+    transition: 1s ease;
+}
+.img-overlay:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.img-text{
+    color: white;
+    font-size: 30px;
     font-weight: 500;
     text-align: center;
-    color: white;
-    position: absolute;
-    margin-top: -120px;
+    padding: 20px;
+    transition: 1s ease;
+}
+.cards2-sect{
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
