@@ -9,19 +9,10 @@
 .container{
     background: #e6eae6;
 }
-.overlay{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 .content{
     width: 100%;
     height: 100vh;
-    background-image: url(./images/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -203,7 +194,7 @@
     transform: scale(1.1);
 }
 
-/***************Services****************/
+/***What we do***/
 .service-section{
     margin-top: 110px;
 }
@@ -346,6 +337,191 @@
     height: 230px;
     border-radius: 5px;
     object-fit: cover;
+}
+
+/******************Our Services*********************/
+.serv-content{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./images/Garden-edging-ideas-with-curved-garden-edging-and-rock-garden.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+.serv-content h2{
+    font-size: 50px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.service-sect{
+    padding: 60px;
+}
+.service-sect h1{
+    font-size: 22px;
+    font-weight: 400;
+    color: #008a20;
+}
+.cards-sect{
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.serv-cards{
+    width: 280px;
+    height: 260px;
+    display: block;
+    position: relative;
+}
+.serv-cards img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 1;
+    transition: 1s ease;
+}
+.img-overlay:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.img-text{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    transition: 1s ease;
+}
+.cards2-sect{
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards3-sect{
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/******************Gallary*********************/
+.sub-content{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(./images/back.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+.sub-content h2{
+    font-size: 50px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.service-sect{
+    padding: 60px;
+}
+.service-sect h1{
+    font-size: 22px;
+    font-weight: 400;
+    color: #008a20;
+}
+.cards-sect{
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gal-cards{
+    width: 280px;
+    height: 260px;
+    display: block;
+    position: relative;
+}
+.gal-cards img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 1;
+    transition: 1s ease;
+}
+.img-overlay:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.img-text{
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    transition: 1s ease;
+}
+.cards2-sect{
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards3-sect{
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards4-sect{
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards5-sect{
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
