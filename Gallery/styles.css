@@ -21,7 +21,7 @@
 .content{
     width: 100%;
     height: 500px;
-    background-image: url(./images/Garden-edging-ideas-with-curved-garden-edging-and-rock-garden.jpg);
+    background-image: url(./images/back.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -146,6 +146,20 @@
     align-items: center;
 }
 .cards3-sect{
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards4-sect{
+    margin-top: 80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards5-sect{
     margin-top: 80px;
     position: relative;
     display: flex;
