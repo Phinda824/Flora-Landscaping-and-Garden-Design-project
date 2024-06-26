@@ -35,11 +35,17 @@
   z-index: 3;
 }
 .logo {
-  margin-left: 30px;
+  margin-left: 20px;
+  align-content: center;
+}
+.logo img{
+  height: 70px;
+  cursor: pointer;
 }
 .logo h1 {
   color: lightgreen;
   font-size: 38px;
+
   font-weight: 700;
   text-decoration: underline;
 }
