@@ -738,3 +738,48 @@ textarea:valid ~ label {
 .icons i:hover {
   transform: scale(1.1);
 }
+
+
+/* Adjustments for small screens */
+@media screen and (max-width: 768px) {
+  .cont-content {
+    height: auto; 
+    padding: 80px 0; 
+  }
+
+  .cont-content h2 {
+    font-size: 40px; 
+    top: 50%; 
+  }
+
+  .contact_container {
+    flex-direction: column; 
+    margin: 0 20px; 
+  }
+
+  .contact_form,
+  .contact_image {
+    width: 100%; 
+  }
+
+  .contact_form {
+    margin-top: 30px;
+  }
+
+  .form_group label {
+    font-size: 14px; 
+  }
+
+  .form_group input,
+  .form_group textarea {
+    padding: 8px; 
+  }
+  .form_group button {
+    height: 40px; 
+    margin-top: 0;
+  }
+
+  .contact_image img {
+    height: auto;
+  }
+}
