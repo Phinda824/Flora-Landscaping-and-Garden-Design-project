@@ -1,28 +1,12 @@
 
 document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.nav-links');
     const inputs = document.querySelectorAll('input');
     const textArea = document.querySelectorAll('textarea');
-
-    // Loop through each navigation link
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-            const targetId = this.getAttribute('data-target');
-            
-            // Loop through each section
-            sections.forEach(section => {
-                if (section.id === targetId) {
-                    section.style.display = 'block';
-                } 
-                else {
-                    section.style.display = 'none';
-                }
-            });
-        });
-    });
-
+    const menuIcon = document.querySelector('.menu-icon');
+    
+    //Navigation links
+  
     //input
     inputs.forEach(input => {
         input.addEventListener('focus', function() {
@@ -63,8 +47,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
     });
-
+    
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuIcon && navLinks) {
+        menuIcon.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close navLinks if clicking outside of it or on menuIcon again
+        document.addEventListener('click', function(event) {
+            if (!navLinks.contains(event.target) && event.target !== menuIcon) {
+                navLinks.classList.remove('active');
+            }
+        });
+    } else {
+        console.error('Menu icon or nav links not found in the document.');
+    }
+});
+
 
 
 
