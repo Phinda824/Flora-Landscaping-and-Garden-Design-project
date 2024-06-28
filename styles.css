@@ -7,6 +7,7 @@
 }
 body{
   background: #e6eae6;
+  width: 100%;
 }
 
 .container {
@@ -36,7 +37,9 @@ body{
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
 }
+
 .logo {
   margin-left: 20px;
   align-content: center;
@@ -48,7 +51,6 @@ body{
 .logo h1 {
   color: lightgreen;
   font-size: 38px;
-
   font-weight: 700;
   text-decoration: underline;
 }
@@ -60,7 +62,7 @@ body{
 }
 .nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin-right: 30px;
 }
@@ -79,8 +81,15 @@ body{
   color: lightgreen;
 }
 
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+
 /* Main Content */
 .home-section {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -128,7 +137,7 @@ body{
   background: #e6eae6;
 }
 
-/*About Us.*/
+/************About Us.**********/
 .sect-text {
   margin-top: 110px;
 }
@@ -610,7 +619,7 @@ body{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 200px;
+  margin: 0 100px;
   border-radius: 8px;
   margin-top: 50px;
 }
@@ -746,6 +755,7 @@ textarea:valid ~ label {
 /***************Footer****************/
 .footer {
   height: 120px;
+  width: 100%;
   background: #008a20;
   margin-top: 100px;
   display: flex;
@@ -788,10 +798,98 @@ textarea:valid ~ label {
   transform: scale(1.1);
 }
 
-
-/* Adjustments for small screens */
+/****Adjustments for small screens****/
 @media screen and (max-width: 768px) {
-  
+  /*****Navigation*****/
+  .nav {
+    flex-direction: row;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: -30px;
+    width: 100%;
+    height: auto;
+    background-color: #008a20;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.1); 
+  }
+
+  .nav-links.active{
+    display: flex;
+
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .nav-links li a{
+    font-size: 15px;
+    
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 23px;
+  }
+
+
+
+/*about*/
+.infor{
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+}
+
+.main-text h1 {
+  font-size: 22px;
+}
+
+.main-text p {
+  font-size: 14px;
+}
+
+.top-sect {
+  height: 120px;
+  margin-top: 40px;
+}
+
+.top-sect h1 {
+  font-size: 32px;
+  padding-top: 10px;
+}
+
+.infor {
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.infor img {
+  margin: 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.infor-text {
+  margin-top: 10px;
+}
+
+.infor p {
+  font-size: 14px;
+}
+
+.infor-text .button {
+  font-size: 18px;
+}
+
   /*Gallary*/
   
 
@@ -835,5 +933,17 @@ textarea:valid ~ label {
 
   .contact_image img {
     height: auto;
+  }
+}
+
+@media screen and (width: 425px){
+  .infor{
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 5px 5%;
+  }
+  .infor img{
+  
   }
 }
