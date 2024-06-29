@@ -21,16 +21,15 @@
               <img src="images/Logo/flora logo.png" alt="flora logo" />
             </a>
           </div>
-          <ul class="nav-links">
+          <ul class="nav-links" id="navbar">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Our Gallery</a></li>
             <li><a href="contacts.html">Contacts</a></li>
+            <i class="fas fa-times"></i>
           </ul>
-          <div class="menu-icon">
-            <i class="fas fa-bars"></i>
-          </div>
+            <i class="fas fa-bars" id="menu-icon"></i>
         </div>
         <!-----------------------Home-------------------------->
         <div class="home-section">
@@ -215,5 +214,30 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      const menuIcon = document.getElementById('menu-icon');
+      const navbar = document.getElementById('navbar');
+      const closeIcon = document.querySelector(".fas.fa-times");
+      const navigationLinks = document.querySelectorAll('.nav-links a');
+
+      menuIcon.addEventListener('click', function () {
+          navbar.classList.toggle('responsive');
+      });
+
+      closeIcon.addEventListener('click', function () {
+          navbar.classList.remove('responsive');
+      });
+
+      navigationLinks.forEach(link => {
+          link.addEventListener('click', function () {
+              navbar.classList.remove('responsive');
+          });
+      });
+    });
+
+
+    </script>
+    
   </body>
 </html>
