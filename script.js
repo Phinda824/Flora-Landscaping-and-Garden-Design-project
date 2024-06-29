@@ -50,25 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuIcon = document.querySelector('.menu-icon');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (menuIcon && navLinks) {
-        menuIcon.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-        });
-
-        // Close navLinks if clicking outside of it or on menuIcon again
-        document.addEventListener('click', function(event) {
-            if (!navLinks.contains(event.target) && event.target !== menuIcon) {
-                navLinks.classList.remove('active');
-            }
-        });
-    } else {
-        console.error('Menu icon or nav links not found in the document.');
-    }
-});
 
 
 
