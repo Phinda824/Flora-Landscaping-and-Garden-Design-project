@@ -81,7 +81,7 @@ body{
   color: lightgreen;
 }
 
-.menu-icon {
+.fas {
   display: none;
   cursor: pointer;
 }
@@ -138,6 +138,7 @@ body{
 }
 
 /************About Us.**********/
+
 .sect-text {
   margin-top: 110px;
 }
@@ -218,7 +219,7 @@ body{
 
 /***What we do***/
 .service-section {
-  margin-top: 110px;
+  margin-top: 110px
 }
 .serv-header h1 {
   font-size: 34px;
@@ -361,7 +362,6 @@ body{
   border-radius: 5px;
   object-fit: cover;
 }
-
 /******************Our Services*********************/
 .serv-content {
   width: 100%;
@@ -799,51 +799,57 @@ textarea:valid ~ label {
   transform: scale(1.1);
 }
 
-/****Adjustments for small screens****/
+/*Adjustments for small screens*/
 @media screen and (max-width: 768px) {
-  /*****Navigation*****/
-  .nav {
-    flex-direction: row;
-    padding: 10px 20px;
-    position: relative;
-  }
-
+  /*Navigation*/
   .nav-links {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 100px;
-    right: -30px;
-    width: 100%;
-    height: auto;
+    width: 40%;
     background-color: #008a20;
-    padding: 10px;
-    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.1); 
+    position: fixed;
+    top: 110px;
+    right: -40px;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
   }
-
-  .nav-links.active{
-    display: flex;
-
-  }
-
   .nav-links li {
-    margin: 10px 0;
     text-align: center;
+    margin: 10px 0;
   }
-  .nav-links li a{
-    font-size: 15px;
-    
+  .nav-links li {
+    display: none;
+    margin: 25px;
   }
-
-  .menu-icon {
+ .nav-links .fas{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    color: #ccc;
+  }
+ 
+  .fas{
     display: block;
     color: white;
-    font-size: 23px;
+    font-size: 25px;
+  }
+  .navigation .fas {
+    display: block;
+    font-size: 40px;
+  }
+ .nav-links i {
+    display: block;
+    cursor: pointer;
+    margin-top: 10px;
   }
 
-
-
 /*about*/
+
+.about-section{
+  height: 54rem;
+}
 .infor{
   flex-direction: column;
   width: 100%;
@@ -889,6 +895,15 @@ textarea:valid ~ label {
 
 .infor-text .button {
   font-size: 18px;
+}
+
+/*What we do*/
+.cards, .card2, .card3 {
+  width: calc(100% - 20px);
+}
+
+.serv-header h1::before, .serv-header h1::after {
+  width: 25%;
 }
 
   /*Gallary*/
@@ -937,6 +952,81 @@ textarea:valid ~ label {
   }
 }
 
+/*Footer*/
+.footer {
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.address, .call, .follow {
+  margin: 10px 0;
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+.follow {
+  justify-content: flex-start;
+}
+
+.icons {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 580px){
+  .about-section{
+    height: 57rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about-section{
+    height: 58rem;
+  }
+}
+
+@media screen and (max-width: 503px) {
+  .about-section{
+    height: 60rem;
+  }
+}
+@media screen and (max-width: 491px) {
+  .about-section{
+    height: 61rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .planning, .implement, .maintanance {
+      padding: 40px 10px;
+  }
+
+  .serv-header h1 {
+      font-size: 28px;
+  }
+
+  .planning h1, .implement h1, .maintanance h1 {
+      font-size: 24px;
+  }
+
+  .serv-header h1::before, .serv-header h1::after {
+      width: 10%;
+  }
+}
+
+@media screen and (max-width: 457px) {
+  .about-section{
+    height: 62.5rem;
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .about-section{
+    height: 64.5rem;
+  }
+}
+
+
 @media screen and (width: 425px){
   .infor{
     flex-direction: column;
@@ -944,7 +1034,88 @@ textarea:valid ~ label {
     margin: 0;
     padding: 5px 5%;
   }
-  .infor img{
-  
+  .about-section{
+    height: 66rem;
+  }
+
+} 
+ 
+@media screen and (max-width: 413px) {
+  .about-section{
+    height: 66rem;
+  }
+}
+@media screen and (max-width: 412px) {
+  .about-section{
+    height: 67.5rem;
+  }
+}
+@media screen and (max-width: 403px) {
+  .about-section{
+    height: 69rem;
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .about-section{
+    height: 71rem;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .about-section{
+    height: 73rem;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .about-section{
+    height: 73rem;
+  }
+}
+@media screen and (max-width: 363px) {
+  .about-section{
+    height: 75rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .about-section{
+    height: 76.5rem;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  .about-section{
+    height: 78rem;
+  }
+}
+
+@media screen and (max-width: 323px) {
+  .about-section{
+    height: 78.5rem;
+  }
+}
+
+@media screen and (max-width: 314px) {
+  .about-section{
+    height: 82rem;
+  }
+}
+@media screen and (max-width: 306px) {
+  .about-section{
+    height: 84rem;
+  }
+}
+@media screen and (max-width: 303px) {
+  .about-section{
+    height: 85rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .about-section{
+    height: 87rem;
   }
 }
