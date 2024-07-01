@@ -1,0 +1,15 @@
+1. Consultation and Planning:
+
+Consultation: This involves gathering requirements, understanding needs, and discussing goals with stakeholders or clients. It's a phase where information is exchanged, questions are asked, and initial ideas are explored.
+Planning: Once requirements are understood, a detailed plan is formulated. This includes defining objectives, outlining tasks, estimating resources (time, budget, personnel), setting timelines, and creating a roadmap for the project or service.
+
+
+2. Implementation:
+Execution: This stage involves putting the plans into action. Tasks and activities are performed according to the project plan. This is where the bulk of the work happens, whether it's developing a system, rolling out a service, or carrying out the activities outlined in the plan.
+
+3. Maintenance and Support:
+
+Maintenance: After implementation, there's a need to ensure that what has been implemented continues to operate smoothly. This involves regular checks, updates, and fixes to keep everything running efficiently.
+Support: This stage involves providing assistance to users or clients after the project or service has been delivered. It includes addressing issues, answering queries, and making improvements based on feedback.
+
+
