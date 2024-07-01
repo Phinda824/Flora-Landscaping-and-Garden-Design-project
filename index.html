@@ -10,33 +10,36 @@
     <title>Flora Landscape & Garden Design</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <div class="container">
       <div class="content">
         <!-----------------------Navbar-------------------------->
         <div class="nav">
           <div class="logo">
-            <h1>Flora</h1>
-            <p>Landscape & Garden Design</p>
+            <a href="index.html">
+              <img src="images/Logo/flora logo.png" alt="flora logo" />
+            </a>
           </div>
-          <ul>
+          <ul class="nav-links" id="navbar">
             <li><a href="index.html">Home</a></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="gallary.html">Our Gallery</a></li>
+            <li><a href="gallery.html">Our Gallery</a></li>
             <li><a href="contacts.html">Contacts</a></li>
+            <i class="fas fa-times"></i>
           </ul>
+            <i class="fas fa-bars" id="menu-icon"></i>
         </div>
-
         <!-----------------------Home-------------------------->
         <div class="home-section">
           <h1>Flora Land & Garden Design</h1>
-          <p>
+          <!-- <p>
             We take care of everything from the initial concept and landscape
             design to bring your garden to life. Our landscape design and
             installation services give you the full scope of landscaping
             services in one offering
-          </p>
+          </p> -->
           <a href="contacts.html"><button class="btn">Get in Touch</button></a>
         </div>
       </div>
@@ -57,7 +60,10 @@
             <h1>WHO ARE WE?</h1>
           </div>
           <div class="infor">
-            <img src="./images/IMG-20240605-WA0030.jpg" alt="" />
+            <div class="info-image">
+              <img src="./images/IMG-20240605-WA0030.jpg" alt="" />
+            </div>
+
             <div class="infor-text">
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
@@ -138,17 +144,17 @@
               exercitationem. Ex accusamus optio tempora veritatis soluta.
             </li>
           </ul>
-          <div class="cards-implem1">
-            <div class="card2">
+          <div class="cards-sect">
+            <div class="cards">
               <img src="./images/images (1).jpeg" alt="" />
             </div>
-            <div class="card2">
+            <div class="cards">
               <img src="images/IMG-20240605-WA0013.jpg" alt="" />
             </div>
-            <div class="card2">
+            <div class="cards">
               <img src="./images/IMG-20240605-WA0037.jpg" alt="" />
             </div>
-            <div class="card2">
+            <div class="cards">
               <img src="./images/IMG-20240605-WA0049.jpg" alt="" />
             </div>
           </div>
@@ -175,17 +181,17 @@
               exercitationem. Ex accusamus optio tempora veritatis soluta.
             </li>
           </ul>
-          <div class="cards-maintain">
-            <div class="card3">
+          <div class="cards-sect">
+            <div class="cards">
               <img src="./images/About.webp" alt="" />
             </div>
-            <div class="card3">
+            <div class="cards">
               <img src="images/gardenclearancestrimming.webp" alt="" />
             </div>
-            <div class="card3">
+            <div class="cards">
               <img src="./images/Support.jpg" alt="" />
             </div>
-            <div class="card3">
+            <div class="cards">
               <img src="./images/IMG-20240605-WA0048.jpg" alt="" />
             </div>
           </div>
@@ -208,5 +214,30 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+      const menuIcon = document.getElementById('menu-icon');
+      const navbar = document.getElementById('navbar');
+      const closeIcon = document.querySelector(".fas.fa-times");
+      const navigationLinks = document.querySelectorAll('.nav-links a');
+
+      menuIcon.addEventListener('click', function () {
+          navbar.classList.toggle('responsive');
+      });
+
+      closeIcon.addEventListener('click', function () {
+          navbar.classList.remove('responsive');
+      });
+
+      navigationLinks.forEach(link => {
+          link.addEventListener('click', function () {
+              navbar.classList.remove('responsive');
+          });
+      });
+    });
+
+
+    </script>
+    
   </body>
 </html>

@@ -7,32 +7,40 @@
     <title>Flora Landscape & Garden Design</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<!---->
 <body>
-    <div class="container">
+    <div class="container" id="contact_page">
         <div class="cont-content">
             <!-----------------------Navbar-------------------------->
             <div class="nav">
                 <div class="logo">
-                    <h1>Flora</h1>
-                    <p>Landscape & Garden Design</p>
+                    <a href="index.html">
+                        <img src="images/Logo/flora logo.png" alt="flora logo">
+                    </a>
                 </div>
-                <ul>
+              
+                <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="gallary.html">Our Gallery</a></li>
+                    <li><a href="gallery.html">Our Gallery</a></li>
                     <li><a href="contacts.html">Contacts</a></li>
                 </ul>
+                <div class="menu-icon">
+                  <i class="fas fa-bars"></i> 
+                </div>  
             </div>
-
             <h2>Contacts</h2>
             
         </div>
 
         <!-----------------------Contacts-------------------------->
         <div class="contact_container">
+            <div class="contact_image">
+                <img src="images/About.webp" alt="Contact Us Image">
+            </div>
             <div class="contact_form">
-                <h2>Contact Us</h2>
+                <h2>Fill the form</h2>
                 <form class="inp-form">
                     <div class="form_group">
                         <label for="fullname">Full Name</label>
@@ -50,7 +58,7 @@
                         <label for="subject">Subject</label>
                         <input type="text" id="subject" name="subject" required>
                     </div>
-                    <div class="form_group">
+                    <div class="form_group form_textarea">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
@@ -59,9 +67,7 @@
                     </div>
                 </form>
             </div>
-            <div class="contact_image">
-                <img src="images/About.webp" alt="Contact Us Image">
-            </div>
+          
         </div>
         
         
