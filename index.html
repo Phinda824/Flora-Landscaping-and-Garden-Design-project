@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="navigation.css">
+      <link rel="icon" href="images/logo/flora-tab-logo.png" type="image/x-icon">
     <title>Flora Landscape & Garden Design</title>
-    <link rel="stylesheet" href="styles.css" />
+   
   </head>
+
   <body>
     <div class="container">
       <div class="content">
         <!-----------------------Navbar-------------------------->
-        <div class="nav">
-          <div class="logo">
-            <h1>Flora</h1>
-            <p>Landscape & Garden Design</p>
-          </div>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo"><img src="images/Logo/flora logo.png" alt="flora logo"/></label>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="gallary.html">Our Gallery</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="gallery.html">Our Gallery</a></li>
+            <li><a href="contacts.html">Contact</a></li>
           </ul>
-        </div>
+        </nav>
 
+       
         <!-----------------------Home-------------------------->
         <div class="home-section">
           <h1>Flora Land & Garden Design</h1>
@@ -35,39 +40,47 @@
             We take care of everything from the initial concept and landscape
             design to bring your garden to life. Our landscape design and
             installation services give you the full scope of landscaping
-            services in one offering
+            services in one offering.
           </p>
           <a href="contacts.html"><button class="btn">Get in Touch</button></a>
         </div>
       </div>
 
-      <div class="about-section">
+      <div id="about_page" class="about-section">
         <div class="sect-text">
           <div class="main-text">
             <h1>FLORA LANDSCAPE</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus recusandae corporis sed voluptatibus fuga omnis
-              repellendus libero. Suscipit itaque quod illum molestiae quo fuga
-              dicta, nisi temporibus recusandae numquam, quasi accusantium quas,
-              saepe maiores sunt obcaecati amet corrupti laboriosam. Vel?
+              Flora Landscape is where innovation meets nature, crafting outdoor
+              sanctuaries that inspire and endure. We don't just design gardens;
+              we curate living art, blending sustainability with sophistication
+              to redefine outdoor beauty with sustainable elegance. In the
+              garden of urban life, we plant the seeds of harmony, nurturing
+              nature's resilience with every design, transforming landscapes and
+              cultivating dreams through our art of green alchemy, where every
+              leaf and stone tells a tale of sustainable elegance.
             </p>
           </div>
+
           <div class="top-sect">
             <h1>WHO ARE WE?</h1>
           </div>
           <div class="infor">
-            <img src="./images/IMG-20240605-WA0030.jpg" alt="" />
+            <div class="info-image">
+              <img src="./images/aboutImage.jpg" alt="" />
+            </div>
+
             <div class="infor-text">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-                unde dolor officiis eos nobis obcaecati voluptates voluptas
-                facere! Provident assumenda, officiis corporis soluta expedita
-                libero ullam debitis dolores eius dignissimos error voluptatum
-                amet illum totam repellendus culpa, laboriosam id sint ea fugit
-                vel iusto? Dolorem.
+                <span>Flora Landscape</span>, established in 2022, stands as a
+                pioneering force in the landscaping industry, driven by a
+                passion for transforming outdoor spaces into captivating
+                environments. With a focus on sustainable practices and creative
+                design solutions, Flora Landscape aims to harmonize nature with
+                urban settings...<br />
+                <a href="about">Read more about us</a>
               </p>
-              <button class="button">Read more about us</button>
+              <!-- <button class="button">Read more about us</button> -->
             </div>
           </div>
         </div>
@@ -82,131 +95,134 @@
           <h1>Consultation and Planning</h1>
           <div class="cards-sect">
             <div class="cards">
-              <img src="./images/consult.jpg" alt="" />
+              <img src="./images/consultants.jpg" alt="" />
               <p>
-                Schedule a one-on-one meeting to discuss ideas and requirements.
-                We will address design considerations such as the desired
-                purpose for your space.
+                Our landscape consultation and planning services begin with an in-depth 
+                discussion to understand your vision and preferences.
               </p>
-              <div class="consult">
-                <a href="#">Request Consultation</a>
-              </div>
+            
             </div>
             <div class="cards">
-              <img src="images/Design Images.jpeg" alt="" />
+              <img src="images/planning01.jpg" alt="" />
               <p>
-                We plan how you want us to use your space and then figuring out
-                how to add beauty and utility to your design.
+                We assess your property's unique characteristics and potential 
+                to design a landscape plan that harmonizes with its natural features.
               </p>
             </div>
             <div class="cards">
-              <img src="./images/Planning01.jpeg" alt="" />
+              <img src="./images/planning02.jpg" alt="" />
               <p>
-                This mystical number will help guide the direction of the plans
-                and how they are composed.
+                Our experts provide detailed sketches and 3D models 
+                to help you visualize the proposed design before implementation.
               </p>
             </div>
             <div class="cards">
               <img src="./images/plan.jpg" alt="" />
               <p>
-                Curving features and the softening effect of foliage disguise
-                the rectangular shape of this shallow backyard to make it feel
-                inviting.
+                We collaborate closely with you throughout the planning process, 
+                ensuring every detail aligns with your expectations and budget.
+
               </p>
             </div>
           </div>
         </div>
         <div class="implement">
           <h1>Implementation</h1>
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, distinctio culpa blanditiis fuga maxime quaerat
-              laborum quasi velit, molestias veritatis possimus sunt commodi
-              exercitationem. Ex accusamus optio tempora veritatis soluta.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, distinctio culpa blanditiis fuga maxime quaerat
-              laborum quasi velit, molestias veritatis possimus sunt commodi
-              exercitationem. Ex accusamus optio tempora veritatis soluta.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, distinctio culpa blanditiis fuga maxime quaerat
-              laborum quasi velit, molestias veritatis possimus sunt commodi
-              exercitationem. Ex accusamus optio tempora veritatis soluta.
-            </li>
-          </ul>
-          <div class="cards-implem1">
-            <div class="card2">
-              <img src="./images/images (1).jpeg" alt="" />
+          <div class="cards-sect">
+            <div class="cards">
+              <img src="./images/image03.jpg" alt="" />
+              <p>
+                Our implementation process ensures that every aspect of the 
+                landscape design is executed with precision and attention to detail.
+              </p>
             </div>
-            <div class="card2">
-              <img src="images/IMG-20240605-WA0013.jpg" alt="" />
+            <div class="cards">
+              <img src="./images/image05.jpg" alt="" />
+              <p>
+                We use high-quality materials and plants to bring the planned design to life, 
+                ensuring durability and aesthetic appeal.
+              </p>
             </div>
-            <div class="card2">
-              <img src="./images/IMG-20240605-WA0037.jpg" alt="" />
+            <div class="cards">
+              <img src="./images/implementation-2.jpg" alt="" />
+              <p>
+                Our skilled team handles everything from planting to hardscape installation, 
+                ensuring a seamless transition from design to reality.
+              </p>
             </div>
-            <div class="card2">
-              <img src="./images/IMG-20240605-WA0049.jpg" alt="" />
+            <div class="cards">
+              <img src="images/implementation-1.jpg" alt="" />
+              <p>
+                Throughout the implementation phase, we maintain open communication, 
+                keeping you informed and involved at every step.
+              </p>
             </div>
           </div>
         </div>
+
         <div class="maintanance">
           <h1>Maintanance and Support</h1>
-          <ul>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, distinctio culpa blanditiis fuga maxime quaerat
-              laborum quasi velit, molestias veritatis possimus sunt commodi
-              exercitationem. Ex accusamus optio tempora veritatis soluta.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, distinctio culpa blanditiis fuga maxime quaerat
-              laborum quasi velit, molestias veritatis possimus sunt commodi
-              exercitationem. Ex accusamus optio tempora veritatis soluta.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis, distinctio culpa blanditiis fuga maxime quaerat
-              laborum quasi velit, molestias veritatis possimus sunt commodi
-              exercitationem. Ex accusamus optio tempora veritatis soluta.
-            </li>
-          </ul>
-          <div class="cards-maintain">
-            <div class="card3">
-              <img src="./images/About.webp" alt="" />
-            </div>
-            <div class="card3">
-              <img src="images/gardenclearancestrimming.webp" alt="" />
-            </div>
-            <div class="card3">
+          <div class="cards-sect">
+            <div class="cards">
               <img src="./images/Support.jpg" alt="" />
+              <p>
+                Our team ensures your landscape remains pristine with regular maintenance, 
+                including mowing, trimming, and seasonal planting.
+              </p>
             </div>
-            <div class="card3">
-              <img src="./images/IMG-20240605-WA0048.jpg" alt="" />
+            <div class="cards">
+              <img src="./images/image27.jpg" alt="" />
+              <p>
+                We offer comprehensive support to address any issues, 
+                ensuring your garden stays healthy and vibrant all year round.
+              </p>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-----------------------Footer-------------------------->
-      <div class="footer">
-        <div class="address">Address: Street 25, Cape Town, 7101</div>
-        <div class="call">Cell: 071 234 5678</div>
-        <div class="follow">
-          <p>Follow Us:</p>
-          <div class="icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <div class="cards">
+              <img src="./images/image19.jpg" alt="" />
+              <p>
+                Our experts are available for consultations to provide guidance on plant care,
+                pest control, and landscape enhancements.
+              </p>
+            </div>
+            <div class="cards">
+              <img src="./images/maintance&support03.jpg" alt="" />
+              <p>
+                With our proactive approach, we handle all aspects of landscape upkeep, 
+                allowing you to enjoy a beautiful and stress-free outdoor space.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-----------------------Footer-------------------------->
+  
+      <div class="footer">
+        <div class="bottom_footer">
+          <div class="address">Location: Western Cape, Cape Town</div>
 
+          <div class="browser">
+            <a href="about.html">About Us |</a>
+            <a href="services.html">Services |</a>
+            <a href="gallery.html">Our Gallery</a>
+          </div>
+    
+          <div class="call">Call Us: +2768 524 8262</div>
+          <div class="follow">
+            <p>Follow Us:</p>
+            <div class="icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>        
+        </div>
+        <div class="copyright">
+          <a href="">©Kwaza/Simanga 2024. All rights reserved</a>
+        </div>
+      </div>
+      
     <script src="script.js"></script>
   </body>
 </html>
